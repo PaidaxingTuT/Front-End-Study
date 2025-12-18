@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单学习</title>
+</head>
+<form action="test.php" method="post">
+    <ul>
+        <li>
+            <label>
+                账号：<input type="text" placeholder="请输入账号" name="username" autocomplete="off">
+            </label>
+        </li>
+        <li>
+            <label>
+                密码：<input type="password" placeholder="请输入密码" name="pwd" maxlength="6">
+            </label>
+        </li>
+        <li>
+            性别：
+
+            <!-- label实现方式一 -->
+            <input type="radio" name="gender" value="male" id="male" checked> <label for="male">男</label>
+
+            <!-- label实现方式二 -->
+            <label>
+                <input type="radio" name="gender" value="female">女
+            </label>
+        </li>
+
+        <li>
+            <input type="checkbox" name="hobby" value="football" id="football"> <label for="football">足球</label>
+            <input type="checkbox" name="hobby" value="basketball" id="basketball"> <label for="basketball">篮球</label>
+            <input type="checkbox" name="hobby" value="running" id="running"> <label for="running">跑步</label>
+        </li>
+
+        <li>
+            头像：
+            <input type="file" name="file" multiple accept=".jpg,.png">
+        </li>
+
+        <li>
+            <label>
+                留言：
+                <textarea name="desc" id="" cols="30" rows="10"></textarea>
+            </label>
+        </li>
+
+        <li>
+            <button>提交</button>
+        </li>
+    </ul>
+</form>
+
+<body>
+
+</body>
+
+</html>
