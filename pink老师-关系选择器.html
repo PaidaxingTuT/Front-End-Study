@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        div p {
+            color: red;
+        }
+
+        .father > p {
+            color: blue;
+        }
+
+        .father > div h2, h3 {
+            color: green;
+        }
+
+        h2 + p {
+            color: purple;
+        }
+
+        h3 ~ p {
+            color: orange;
+        }
+    </style>
+    <title>关系选择器</title>
+</head>
+<body>
+<div>
+    <p>后代选择器</p>
+</div>
+<p>非后代p不变颜色</p>
+
+<div class="father">
+    <p>我是儿子</p>
+    <div class="son">
+        <h2>我是孙子</h2>
+        <p>邻接兄弟选择器</p>
+        <h3>我是孙子兄弟</h3>
+        <p>通用兄弟选择器</p>
+        <p>通用兄弟选择器</p>
+    </div>
+</div>
+</body>
+</html>
