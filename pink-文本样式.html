@@ -3,8 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <title>文本样式</title>
+    <style>
+        .red {
+            color: red;
+        }
+
+        .blue {
+            color: #00ff00;
+        }
+
+        .green {
+            color: rgb(0, 0, 255);
+        }
+        .rgba {
+            color: rgba(0, 0, 0, 0.5);
+        }
+        .font {
+            font-family: 微软雅黑 , sans-serif;
+        }
+        .size {
+            font-size: 12px;
+        }
+    </style>
 </head>
 <body>
+<!--字体样式-->
+    <!--字体颜色color 关键字 十六进制 rgb格式-->
+        <p class="red">字体颜色red</p>
+        <p class="blue">字体颜色#00ff00</p>
+        <p class="green">字体颜色rgb(0,0,255)</p>
+        <p class="rgba">字体半透明</p>
+    <!--字体族font family-->
+        <p class="font red">字体族</p>
+    <!--字体大小font-size-->
+        <p class="size">字体大小12px</p>
+    <!--字体风格font-style-->
+        <p style="font-style: normal;">正常字体风格</p>
+        <p style="font-style: italic;">斜体字体风格</p>
+        <i style="font-style: normal;">被正常强兼的倾斜</i>
+    <!--字体粗细font-weight-->
+        <p style="font-weight: normal;">正常字体粗细</p>
+        <p style="font-weight: bold;">加粗字体粗细</p>
+        <p style="font-weight: 100;">100字体粗细</p>
+        <p style="font-weight: 900;">900字体粗细</p>
+    <!--字体装饰text-decoration-->
+        <a href="#" style="text-decoration: none;color: black">取消下划线</a>
+        <p style="text-decoration: underline;">下划线文字</p>
+        <p style="text-decoration: line-through;">删除线文字</p>
+        <p style="text-decoration: overline;">上划线文字</p>
+<!--文本布局-->
+    <!--文本对齐text-align-->
+        <p style="text-align: left; border: 1px solid black;">左对齐文本左对齐文本左对齐文本左对齐文本</p>
+        <p style="text-align: center; border: 1px solid black;">居中文本居中文本居中文本居中文本</p>
+        <p style="text-align: right; border: 1px solid black;">右对齐文本右对齐文本右对齐文本右对齐文本</p>
+        <p style="text-align: justify; border: 1px solid black;">两端对齐文本两端对齐文本两端对齐文本两端对齐文本两端对齐文本</p>
 
+    <!--文本缩进text-indent-->
+        <p style="text-indent: 2em; border: 1px solid black;">文本缩进文本缩进文本缩进文本缩进文本缩进文本缩进</p>
+    <!--字间距letter-spacing-->
+        <p style="letter-spacing: 5px; border: 1px solid black;">字间距字间距字间距字间距字间距字间距</p>
+    <!--行高line-height-->
+        <p style="line-height: 5; border: 1px solid black;">行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高行高</p>
+<!--font简写-->
+    <p style="font: italic bold 20px/2 '微软雅黑', sans-serif; border: 1px solid black;">font-size和font-family的必须，其他可以省略，这句话是斜体加粗20px行高2的微软雅黑字体</p>
+<!--css的继承性-->
+    <div style="color: red; font-size: 20px; border: 1px solid black;">
+        父元素设置了字体颜色和大小
+        <p>子元素继承了父元素的字体颜色和大小</p>
+    </div>
 </body>
 </html>
